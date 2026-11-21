@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Mail, Menu, Phone, X } from "lucide-react";
 import { mainNav } from "@/data/navigation";
@@ -10,6 +11,12 @@ import { site } from "@/data/site";
 export function MobileMenu({ pathname }: { pathname: string }) {
   const [open, setOpen] = useState(false);
   const reduce = useReducedMotion();
+  // True only on the client, so the portal never renders during SSR.
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   // Close the menu whenever the route changes.
   const [lastPath, setLastPath] = useState(pathname);
@@ -44,6 +51,8 @@ export function MobileMenu({ pathname }: { pathname: string }) {
         {open ? <X className="size-5" aria-hidden /> : <Menu className="size-5" aria-hidden />}
       </button>
 
+      {/* Portal to <body>: the header's backdrop-filter would otherwise trap this fixed panel inside it. */}
+      {mounted && createPortal(
       <AnimatePresence>
         {open && (
           <motion.div
@@ -52,7 +61,7 @@ export function MobileMenu({ pathname }: { pathname: string }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: reduce ? 0 : -12 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-x-0 top-20 bottom-0 z-40 overflow-y-auto border-t border-line bg-white"
+            className="fixed inset-x-0 top-20 bottom-0 z-40 overflow-y-auto border-t border-line bg-white lg:hidden"
           >
             <nav aria-label="Mobile" className="container-x flex flex-col py-6">
               <ul className="divide-y divide-line">
@@ -89,7 +98,9 @@ export function MobileMenu({ pathname }: { pathname: string }) {
             </nav>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence>,
+      document.body,
+      )}
     </div>
   );
 }
