@@ -1,26 +1,157 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forest: #064b24;
+  --color-emerald: #087b39;
+  --color-fresh: #26b85a;
+  --color-gold: #d5a12b;
+  --color-gold-light: #f4d77b;
+  --color-gold-deep: #a8770f;
+  --color-ink: #10241b;
+  --color-muted: #647067;
+  --color-soft: #f7f9fc;
+  --color-line: #e3e9e5;
+  --color-violet: #6d28d9;
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-jakarta);
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); filter: blur(6px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+.animate-rise {
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-shimmer {
+  animation: shimmer 6s linear infinite;
+}
+
+/* Softly fades all four edges so tightly cropped product shots blend into the page. */
+.fade-edges {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  mask-composite: intersect;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+p { text-wrap: pretty; }
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@utility btn {
+  @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-[15px] font-semibold transition-all duration-300;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+  .text-gold-gradient {
+    background: linear-gradient(100deg, #a8770f 0%, #d5a12b 30%, #f4d77b 55%, #d5a12b 75%, #a8770f 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-green-gradient {
+    background: linear-gradient(100deg, #064b24, #087b39 60%, #26b85a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-emerald;
+  }
+  .btn-primary {
+    @apply btn text-white shadow-[0_10px_30px_-10px_rgba(6,75,36,0.7)] hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-12px_rgba(6,75,36,0.8)];
+    background: linear-gradient(120deg, #043a1c, #087b39 55%, #0f9447);
+    background-size: 160% 100%;
+    background-position: 0% 50%;
+  }
+  .btn-primary:hover { background-position: 100% 50%; }
+  .btn-gold {
+    @apply btn text-ink shadow-[0_10px_30px_-12px_rgba(168,119,15,0.75)] hover:-translate-y-0.5;
+    background: linear-gradient(120deg, #e9bd4c, #f4d77b 45%, #d5a12b);
+  }
+  .btn-violet {
+    @apply btn text-white shadow-[0_10px_30px_-10px_rgba(76,29,149,0.7)] hover:-translate-y-0.5;
+    background: linear-gradient(120deg, #3b0f80, #5b21b6 55%, #7c3aed);
+  }
+  .btn-outline {
+    @apply btn border border-forest/20 bg-white text-forest hover:-translate-y-0.5 hover:border-forest/40 hover:bg-soft;
+  }
+  .btn-ghost-light {
+    @apply btn border border-white/30 bg-white/10 text-white backdrop-blur hover:-translate-y-0.5 hover:bg-white/20;
+  }
+  .card {
+    @apply rounded-3xl border border-line bg-white shadow-[0_1px_2px_rgba(16,36,27,0.04),0_20px_50px_-30px_rgba(16,36,27,0.25)];
+  }
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_2px_4px_rgba(16,36,27,0.04),0_30px_60px_-28px_rgba(6,75,36,0.35)];
+  }
+  .gold-rule {
+    @apply h-px w-full;
+    background: linear-gradient(90deg, transparent, #d5a12b 30%, #f4d77b 50%, #d5a12b 70%, transparent);
+  }
+  .nav-link {
+    @apply relative py-2 text-[15px] font-medium text-ink/80 transition-colors hover:text-forest;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-gradient-to-r from-emerald to-gold transition-transform duration-300;
+  }
+  .nav-link:hover::after,
+  .nav-link[aria-current="page"]::after { @apply scale-x-100; }
+  .nav-link[aria-current="page"] { @apply text-forest; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
