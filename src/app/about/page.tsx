@@ -136,7 +136,7 @@ export default function AboutPage() {
             </article>
           </Reveal>
           <Reveal delay={0.1}>
-            <article className="relative h-full overflow-hidden rounded-3xl bg-[radial-gradient(120%_120%_at_0%_0%,#0b8a40_0%,#064b24_50%,#03200f_100%)] p-9 text-white shadow-[0_30px_60px_-30px_rgba(6,75,36,0.7)] sm:p-11">
+            <article className="relative h-full overflow-hidden rounded-3xl bg-[radial-gradient(120%_120%_at_0%_0%,#1d4a38_0%,#0f2a20_50%,#0a1a14_100%)] p-9 text-white shadow-[0_30px_60px_-30px_rgba(15,42,32,0.7)] sm:p-11">
               <div aria-hidden className="absolute -bottom-20 -right-10 size-64 rounded-full bg-gold/30 blur-[70px]" />
               <span className="relative grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-forest">
                 <Telescope className="size-7" aria-hidden />

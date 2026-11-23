@@ -20,7 +20,7 @@ const partnerLinks = [
 export async function Footer() {
   const year = await getYear();
   return (
-    <footer className="relative overflow-hidden bg-[#04140b] text-white/75">
+    <footer className="relative overflow-hidden bg-[#07130e] text-white/75">
       <div aria-hidden className="pointer-events-none absolute -top-40 right-[-10%] size-[520px] rounded-full bg-emerald/25 blur-[120px]" />
       <div aria-hidden className="pointer-events-none absolute bottom-[-30%] left-[-10%] size-[420px] rounded-full bg-gold/10 blur-[120px]" />
       <div className="gold-rule opacity-70" />

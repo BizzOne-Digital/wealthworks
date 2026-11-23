@@ -5,7 +5,7 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
   return (
     <div className="space-y-3">
       {items.map((f) => (
-        <details key={f.q} className="group card overflow-hidden open:shadow-[0_20px_50px_-30px_rgba(6,75,36,0.4)]">
+        <details key={f.q} className="group card overflow-hidden open:shadow-[0_20px_50px_-30px_rgba(15,42,32,0.4)]">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-6 font-display text-lg font-bold text-ink [&::-webkit-details-marker]:hidden">
             {f.q}
             <span className="grid size-9 shrink-0 place-items-center rounded-full bg-soft text-emerald transition-transform duration-300 group-open:rotate-45 group-open:bg-forest group-open:text-gold-light">

@@ -37,7 +37,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, crumb, 
         </div>
         <Reveal delay={0.15} className="relative">
           <div aria-hidden className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-gold-light/70 via-white to-fresh/40" />
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] border-4 border-white shadow-[0_40px_80px_-40px_rgba(6,75,36,0.55)]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] border-4 border-white shadow-[0_40px_80px_-40px_rgba(15,42,32,0.55)]">
             <Image src={image} alt={imageAlt} fill priority sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
             <div aria-hidden className="absolute inset-0 bg-gradient-to-tr from-forest/35 via-transparent to-transparent" />
           </div>
@@ -57,14 +57,14 @@ export function SwooshBg({ className = "" }: { className?: string }) {
     >
       <defs>
         <linearGradient id="swoosh-gold" x1="0" x2="1">
-          <stop offset="0" stopColor="#d5a12b" stopOpacity="0" />
-          <stop offset="0.45" stopColor="#f4d77b" stopOpacity="0.9" />
-          <stop offset="1" stopColor="#d5a12b" stopOpacity="0" />
+          <stop offset="0" stopColor="#d4af37" stopOpacity="0" />
+          <stop offset="0.45" stopColor="#f3d98b" stopOpacity="0.9" />
+          <stop offset="1" stopColor="#d4af37" stopOpacity="0" />
         </linearGradient>
         <linearGradient id="swoosh-green" x1="0" x2="1">
-          <stop offset="0" stopColor="#26b85a" stopOpacity="0" />
-          <stop offset="0.5" stopColor="#26b85a" stopOpacity="0.3" />
-          <stop offset="1" stopColor="#087b39" stopOpacity="0" />
+          <stop offset="0" stopColor="#1faf5a" stopOpacity="0" />
+          <stop offset="0.5" stopColor="#1faf5a" stopOpacity="0.3" />
+          <stop offset="1" stopColor="#15824a" stopOpacity="0" />
         </linearGradient>
       </defs>
       <path d="M-40 520 C 360 380, 820 640, 1480 300" fill="none" stroke="url(#swoosh-gold)" strokeWidth="2.5" />

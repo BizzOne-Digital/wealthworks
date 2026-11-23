@@ -6,6 +6,7 @@ import { AboutPreview } from "@/components/home/AboutPreview";
 import { FeaturedOpportunities } from "@/components/home/FeaturedOpportunities";
 import { Innovation } from "@/components/home/Innovation";
 import { CTASection } from "@/components/shared/CTASection";
+import { VideoShowcase } from "@/components/home/VideoShowcase";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -20,7 +21,8 @@ export default function HomePage() {
       <AboutPreview />
       <FeaturedOpportunities />
       <Innovation />
-      <div className="pt-4" />
+      <VideoShowcase />
+      <div className="pt-20 sm:pt-24" />
       <CTASection />
     </>
   );

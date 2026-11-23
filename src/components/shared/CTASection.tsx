@@ -17,12 +17,12 @@ export function CTASection({
     <section className="section pt-0">
       <div className="container-x">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#0b8a40_0%,#064b24_45%,#03200f_100%)] px-6 py-14 text-center shadow-[0_40px_80px_-40px_rgba(6,75,36,0.8)] sm:px-12 sm:py-20">
+          <div className="relative overflow-hidden rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#1d4a38_0%,#0f2a20_45%,#0a1a14_100%)] px-6 py-14 text-center shadow-[0_40px_80px_-40px_rgba(15,42,32,0.8)] sm:px-12 sm:py-20">
             <div aria-hidden className="absolute -right-24 -top-24 size-80 rounded-full bg-gold/30 blur-[100px]" />
             <div aria-hidden className="absolute -bottom-32 -left-20 size-96 rounded-full bg-fresh/30 blur-[100px]" />
             <svg aria-hidden viewBox="0 0 800 300" className="absolute inset-0 h-full w-full opacity-40" preserveAspectRatio="none">
-              <path d="M0 240 C 220 120, 520 320, 800 90" fill="none" stroke="#f4d77b" strokeWidth="1.5" />
-              <path d="M0 270 C 260 160, 540 330, 800 130" fill="none" stroke="#f4d77b" strokeWidth="0.8" />
+              <path d="M0 240 C 220 120, 520 320, 800 90" fill="none" stroke="#f3d98b" strokeWidth="1.5" />
+              <path d="M0 270 C 260 160, 540 330, 800 130" fill="none" stroke="#f3d98b" strokeWidth="0.8" />
             </svg>
             <div className="relative mx-auto max-w-2xl">
               <p className="eyebrow justify-center text-gold-light">WealthWorks · Since {site.established}</p>

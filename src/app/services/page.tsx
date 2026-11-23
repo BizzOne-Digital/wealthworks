@@ -24,6 +24,8 @@ import { CTASection } from "@/components/shared/CTASection";
 import { ExternalCta, ReferralDisclosure } from "@/components/shared/ExternalCta";
 import { Faq } from "@/components/shared/Faq";
 import { faqs, opportunities } from "@/data/services";
+import { videos } from "@/data/media";
+import { VideoPlayer } from "@/components/shared/VideoPlayer";
 import { referralLinks, site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -157,9 +159,10 @@ export default function ServicesPage() {
       <section id="wearable-ai" className="section">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
           <Reveal className="order-2 lg:order-1">
-            <div className="fade-edges relative">
-              <Image src="/images/photos/watch.jpg" alt="AI smartwatch with a glowing display" width={1400} height={1017} sizes="(min-width: 1024px) 45vw, 100vw" className="h-auto w-full" />
+            <div className="overflow-hidden rounded-[1.75rem] shadow-[0_40px_80px_-40px_rgba(30,27,75,0.7)]">
+              <Image src="/images/partners/bellator-metaterra-ai-one.jpg" alt="Bellator Metaterra AI One wearable promotional graphic" width={1320} height={743} sizes="(min-width: 1024px) 45vw, 100vw" className="h-auto w-full" />
             </div>
+            <p className="mt-3 text-center text-xs text-muted">Image: Bellator promotional material for Metaterra AI One.</p>
           </Reveal>
           <Reveal delay={0.1} className="order-1 lg:order-2">
             <p className="eyebrow">02 · Smart Devices</p>
@@ -167,11 +170,11 @@ export default function ServicesPage() {
               Wearable <span className="text-green-gradient">AI Technology</span>
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              Wearable devices are becoming smarter every year. WealthWorks follows next-generation wearables and
-              intelligent devices designed for a more connected, more informed everyday life.
+              Wearable devices are becoming smarter every year. WealthWorks introduces next-generation wearables such
+              as the Metaterra AI One, featured by Bellator, designed for a more connected, more informed everyday life.
             </p>
             <ul className="mt-7 space-y-3">
-              {["Next-generation smart wearables", "Intelligent, connected devices", "Product details shared on request"].map((t) => (
+              {["Featured device: Metaterra AI One", "Intelligent, connected technology", "Product details shared on request"].map((t) => (
                 <li key={t} className="flex gap-3"><CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald" aria-hidden /> {t}</li>
               ))}
             </ul>
@@ -220,32 +223,41 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 4 & 5. Bellator Life + BG Lifestyle */}
-      <section className="section">
-        <div className="container-x grid gap-8 lg:grid-cols-2">
+      {/* 4. Bellator Life */}
+      <section id="bellator-life" className="section relative overflow-hidden bg-[radial-gradient(120%_100%_at_0%_0%,#13235a_0%,#0b1438_55%,#070b22_100%)] text-white">
+        <div aria-hidden className="pointer-events-none absolute -right-32 top-10 size-[480px] rounded-full bg-gold/15 blur-[120px]" />
+        <div className="container-x relative grid items-center gap-12 lg:grid-cols-[1.35fr_0.65fr]">
           <Reveal>
-            <article id="bellator-life" className="card relative flex h-full scroll-mt-40 flex-col overflow-hidden">
-              <div className="relative aspect-[16/9]">
-                <Image src="/images/photos/city.jpg" alt="Bright modern office overlooking a city skyline" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03200f]/85 to-transparent" />
-                <p className="absolute bottom-5 left-6 eyebrow text-gold-light">04 · Opportunity</p>
-              </div>
-              <div className="flex flex-1 flex-col p-8">
-                <h2 className="text-3xl font-extrabold">Bellator Life</h2>
-                <p className="mt-4 flex-1 leading-relaxed text-muted">
-                  Bellator Life is an independent membership opportunity that WealthWorks shares with entrepreneurs and
-                  business builders in its network. Full program details, pricing and terms are available directly from
-                  Bellator Life when you sign up.
-                </p>
-                <ExternalCta href={referralLinks.bellatorLife} className="mt-8 self-start">Join Bellator Life</ExternalCta>
-              </div>
-            </article>
+            <p className="eyebrow text-gold-light">04 · Opportunity</p>
+            <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">
+              Bellator <span className="text-gold-gradient">Life</span>
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
+              Bellator Life is an independent membership opportunity that WealthWorks shares with entrepreneurs and
+              business builders. Bellator promotes member debit cards and the Metaterra AI One platform. Full program
+              details, pricing and terms are provided directly by Bellator Life when you sign up.
+            </p>
+            <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/10 shadow-2xl">
+              <Image src="/images/partners/bellator-debit-cards.jpg" alt="Bellator Life debit card tiers promotional graphic" width={1320} height={743} sizes="(min-width: 1024px) 55vw, 100vw" className="h-auto w-full" />
+            </div>
+            <p className="mt-3 text-xs text-white/55">Image: Bellator promotional material. Card terms are set by Bellator Life.</p>
+            <ExternalCta href={referralLinks.bellatorLife} variant="gold" className="mt-8">Join Bellator Life</ExternalCta>
           </Reveal>
-          <Reveal delay={0.1}>
-            <article id="bg-lifestyle" className="relative flex h-full scroll-mt-40 flex-col overflow-hidden rounded-3xl text-white shadow-[0_40px_80px_-40px_rgba(6,75,36,0.6)]">
-              <Image src="/images/photos/travel.jpg" alt="Tropical beach at sunset" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
-              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03200f] via-[#03200f]/70 to-[#03200f]/10" />
-              <div className="relative mt-auto flex flex-col p-8 pt-48">
+          <Reveal delay={0.1} className="mx-auto w-full max-w-xs lg:max-w-none">
+            <VideoPlayer video={videos.businessSystem} className="border border-white/10" />
+            <p className="mt-3 text-center text-sm text-white/70">Metaterra AI One — The Business System</p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 5. BG Lifestyle */}
+      <section className="section">
+        <div className="container-x">
+          <Reveal>
+            <article id="bg-lifestyle" className="relative flex min-h-[30rem] scroll-mt-40 flex-col overflow-hidden rounded-3xl text-white shadow-[0_40px_80px_-40px_rgba(15,42,32,0.6)]">
+              <Image src="/images/photos/travel.jpg" alt="Tropical beach at sunset" fill sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />
+              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14] via-[#0a1a14]/60 to-transparent lg:bg-gradient-to-r lg:from-[#0a1a14] lg:via-[#0a1a14]/70" />
+              <div className="relative mt-auto flex max-w-xl flex-col p-8 pt-48 sm:p-12 lg:my-auto lg:pt-12">
                 <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-forest">
                   <Plane className="size-6" aria-hidden />
                 </span>

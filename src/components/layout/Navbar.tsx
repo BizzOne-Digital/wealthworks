@@ -24,7 +24,7 @@ export function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 border-b bg-white/90 backdrop-blur-xl transition-[box-shadow,border-color] duration-300",
-        scrolled ? "border-line shadow-[0_10px_30px_-20px_rgba(16,36,27,0.35)]" : "border-transparent",
+        scrolled ? "border-line shadow-[0_10px_30px_-20px_rgba(14,26,21,0.35)]" : "border-transparent",
       )}
     >
       <div className="container-x flex h-20 items-center justify-between gap-6">

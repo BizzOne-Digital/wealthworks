@@ -58,7 +58,7 @@ export function Innovation() {
                   sizes="(min-width: 1024px) 33vw, 100vw"
                   className="object-cover transition-transform duration-[1.4s] group-hover:scale-110"
                 />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03200f] via-[#03200f]/40 to-transparent" />
+                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14] via-[#0a1a14]/40 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-7">
                   <span className="grid size-12 place-items-center rounded-2xl border border-white/25 bg-white/15 text-gold-light backdrop-blur">
                     <Icon className="size-6" aria-hidden />

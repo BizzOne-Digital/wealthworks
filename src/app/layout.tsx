@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   icons: { icon: "/images/logo/wealthworks-mark.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#064b24" };
+export const viewport: Viewport = { themeColor: "#0f2a20" };
 
 const jsonLd = {
   "@context": "https://schema.org",

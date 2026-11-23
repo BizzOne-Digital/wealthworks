@@ -85,7 +85,7 @@ export default function ContactPage() {
               <div className="overflow-hidden rounded-3xl border border-line bg-white">
                 <div className="relative aspect-[16/10]">
                   <Image src="/images/photos/city.jpg" alt="Modern office with city views" fill sizes="(min-width: 1024px) 30vw, 100vw" className="object-cover" />
-                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03200f]/85 to-transparent" />
+                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14]/85 to-transparent" />
                   <p className="absolute bottom-4 left-5 flex items-center gap-2 font-display font-bold text-white">
                     <MapPin className="size-4 text-gold-light" aria-hidden /> Atlanta, Georgia
                   </p>
