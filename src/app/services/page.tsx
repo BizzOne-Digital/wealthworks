@@ -248,6 +248,23 @@ export default function ServicesPage() {
             <p className="mt-3 text-center text-sm text-white/70">Metaterra AI One — The Business System</p>
           </Reveal>
         </div>
+
+        {/* Latest Metaterra AI presentation (client-provided) */}
+        <div className="container-x relative mt-20">
+          <Reveal>
+            <div className="mx-auto max-w-4xl text-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-gold-light/40 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">
+                <span className="size-2 rounded-full bg-gold-light" aria-hidden /> Latest
+              </span>
+              <h3 className="mt-5 text-2xl font-extrabold sm:text-4xl">Metaterra AI — Latest Presentation</h3>
+              <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-white/75">
+                Watch the newest walkthrough of the Metaterra AI One platform and how it brings AI into business and
+                everyday life.
+              </p>
+              <VideoPlayer video={videos.metaterraPresentation} className="mt-10 border border-white/10" />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* 5. BG Lifestyle */}

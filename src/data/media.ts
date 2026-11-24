@@ -21,6 +21,13 @@ export const videos = {
     width: 720,
     height: 1280,
   },
+  metaterraPresentation: {
+    src: "/videos/metaterra-ai-presentation.mp4",
+    poster: "/videos/posters/metaterra-ai-presentation.webp",
+    title: "Metaterra AI — latest presentation",
+    width: 832,
+    height: 464,
+  },
 } as const;
 
 export type VideoItem = (typeof videos)[keyof typeof videos];
