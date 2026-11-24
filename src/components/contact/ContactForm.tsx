@@ -39,7 +39,7 @@ export function ContactFormWithParams() {
 
 /**
  * Email delivery is not configured, so the form validates input and then opens the visitor's
- * email app with a prefilled message to WealthWorks (mailto). It never claims the message was sent.
+ * email app with a prefilled message to Wealthworks (mailto). It never claims the message was sent.
  */
 export function ContactForm({ initialInterest = "" }: { initialInterest?: string }) {
   const [errors, setErrors] = useState<Errors>({});

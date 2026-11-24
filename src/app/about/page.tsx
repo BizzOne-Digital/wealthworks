@@ -26,7 +26,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us — Empowering Tomorrow Since 1997",
   description:
-    "Learn about WealthWorks, LLC: bringing future technologies to the world since 1997 through payment technology, AI products, software and business innovation.",
+    "Learn about Wealthworks, LLC: bringing future technologies to the world since 1997 through payment technology, AI products, software and business innovation.",
   alternates: { canonical: "/about" },
 };
 
@@ -49,11 +49,11 @@ export default function AboutPage() {
     <>
       <PageHero
         crumb="About Us"
-        eyebrow={`About WealthWorks · Since ${site.established}`}
+        eyebrow={`About Wealthworks · Since ${site.established}`}
         title={<>Empowering <span className="text-gold-gradient">Tomorrow</span></>}
-        description="WealthWorks, LLC brings future technologies to the world, helping business owners, merchants and innovators access the tools that will shape the next generation of business."
+        description="Wealthworks, LLC brings future technologies to the world, helping business owners, merchants and innovators access the tools that will shape the next generation of business."
         image="/images/photos/office.jpg"
-        imageAlt="WealthWorks branded corporate office lobby"
+        imageAlt="Wealthworks branded corporate office lobby"
       >
         <Link href="/contact" className="btn-primary">
           Talk to Barry Phoenix <ArrowRight className="size-4" aria-hidden />
@@ -72,7 +72,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.1} className="space-y-5 text-lg leading-relaxed text-muted">
             <p>
-              WealthWorks works at the meeting point of technology, financial technology and business solutions. We
+              Wealthworks works at the meeting point of technology, financial technology and business solutions. We
               introduce business owners, entrepreneurs and merchants to technologies and opportunities that can help
               them operate smarter and grow.
             </p>
@@ -89,13 +89,13 @@ export default function AboutPage() {
         <div className="container-x">
           <SectionHeading
             eyebrow="Our Journey"
-            title={<>From 1997 to <span className="text-gold-gradient">the future</span></>}
+            title={<>From 1997 to <span className="text-green-gradient">the future</span></>}
             description="Every chapter of our story has been about one thing: helping people embrace what comes next."
           />
           <ol className="relative mx-auto mt-16 max-w-4xl">
-            <span aria-hidden className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-gold via-emerald to-fresh/0 md:left-1/2" />
+            <span aria-hidden className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-forest via-emerald to-fresh/0 md:left-1/2" />
             {[
-              { year: "1997", title: "The journey begins", text: "WealthWorks begins its journey, built on a commitment to opportunity and forward thinking." },
+              { year: "1997", title: "The journey begins", text: "Wealthworks begins its journey, built on a commitment to opportunity and forward thinking." },
               { year: "Today", title: "Technology at the core", text: "We bring payment technology, AI products and AI software to merchants and business owners." },
               { year: "Next", title: "Bringing the future to the world", text: "We continue introducing evolving technologies as they become practical for real businesses." },
             ].map((m, i) => (
@@ -136,8 +136,8 @@ export default function AboutPage() {
             </article>
           </Reveal>
           <Reveal delay={0.1}>
-            <article className="relative h-full overflow-hidden rounded-3xl bg-[radial-gradient(120%_120%_at_0%_0%,#1d4a38_0%,#0f2a20_50%,#0a1a14_100%)] p-9 text-white shadow-[0_30px_60px_-30px_rgba(15,42,32,0.7)] sm:p-11">
-              <div aria-hidden className="absolute -bottom-20 -right-10 size-64 rounded-full bg-gold/30 blur-[70px]" />
+            <article className="relative h-full overflow-hidden rounded-3xl bg-[radial-gradient(120%_120%_at_0%_0%,#0a6b3c_0%,#064b24_50%,#03301a_100%)] p-9 text-white shadow-[0_30px_60px_-30px_rgba(6,75,36,0.7)] sm:p-11">
+              <div aria-hidden className="absolute -bottom-20 -right-10 size-64 rounded-full bg-fresh/30 blur-[70px]" />
               <span className="relative grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-forest">
                 <Telescope className="size-7" aria-hidden />
               </span>
@@ -174,9 +174,9 @@ export default function AboutPage() {
       {/* Meet Barry */}
       <section className="section">
         <div className="container-x">
-          <div className="grid items-center gap-12 overflow-hidden rounded-[2rem] border border-line bg-gradient-to-br from-white via-white to-[#fdf6e2] p-6 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:p-14">
+          <div className="grid items-center gap-12 overflow-hidden rounded-[2rem] border border-line bg-gradient-to-br from-white via-white to-soft p-6 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:p-14">
             <Reveal className="relative mx-auto w-full max-w-sm">
-              <div aria-hidden className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-gold-light via-white to-fresh/50 opacity-70" />
+              <div aria-hidden className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-fresh/40 via-white to-emerald/40 opacity-70" />
               <div className="relative overflow-hidden rounded-[1.5rem] bg-[#191630] shadow-2xl">
                 <Image
                   src="/images/partners/miraclepay-merchant-flyer.jpg"
@@ -191,14 +191,14 @@ export default function AboutPage() {
             <Reveal delay={0.1}>
               <p className="eyebrow">Meet Your Consultant</p>
               <h2 className="mt-4 text-3xl font-extrabold sm:text-4xl">{site.representative.name}</h2>
-              <p className="mt-2 font-display text-lg font-semibold text-gold-deep">{site.representative.title}</p>
+              <p className="mt-2 font-display text-lg font-semibold text-emerald">{site.representative.title}</p>
               <p className="mt-6 text-lg leading-relaxed text-muted">
-                Barry Phoenix represents WealthWorks and serves as a MiraclePay Merchant Consultant. He helps merchants
+                Barry Phoenix represents Wealthworks and serves as a MiraclePay Merchant Consultant. He helps merchants
                 and business owners understand modern payment options, walks them through getting started, and
-                introduces the technology and opportunities WealthWorks shares.
+                introduces the technology and opportunities Wealthworks shares.
               </p>
               <ul className="mt-6 space-y-3">
-                {["Merchant acquisition for Miracle Pay", "Personal, one-to-one guidance", "Introductions to WealthWorks opportunities"].map((t) => (
+                {["Merchant acquisition for Miracle Pay", "Personal, one-to-one guidance", "Introductions to Wealthworks opportunities"].map((t) => (
                   <li key={t} className="flex gap-3">
                     <CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald" aria-hidden /> {t}
                   </li>
@@ -220,7 +220,7 @@ export default function AboutPage() {
       {/* Why */}
       <section className="section bg-soft">
         <div className="container-x">
-          <SectionHeading eyebrow="Why WealthWorks" title={<>Why connect with <span className="text-green-gradient">WealthWorks?</span></>} />
+          <SectionHeading eyebrow="Why Wealthworks" title={<>Why connect with <span className="text-green-gradient">Wealthworks?</span></>} />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {reasons.map(({ icon: Icon, title, text }, i) => (
               <Reveal key={title} delay={i * 0.08}>

@@ -15,9 +15,9 @@ export function SectionHeading({ eyebrow, title, description, align = "center", 
     <Reveal className={cn(align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-2xl", className)}>
       {eyebrow && (
         <p className={cn("eyebrow", align === "center" && "justify-center")}>
-          <span aria-hidden className="h-px w-8 bg-gradient-to-r from-transparent to-gold" />
+          <span aria-hidden className="h-px w-8 bg-gradient-to-r from-transparent to-emerald" />
           {eyebrow}
-          {align === "center" && <span aria-hidden className="h-px w-8 bg-gradient-to-l from-transparent to-gold" />}
+          {align === "center" && <span aria-hidden className="h-px w-8 bg-gradient-to-l from-transparent to-emerald" />}
         </p>
       )}
       <h2 className="mt-4 text-3xl font-extrabold leading-[1.1] text-ink sm:text-4xl lg:text-[2.9rem]">{title}</h2>

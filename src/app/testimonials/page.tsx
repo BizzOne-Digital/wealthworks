@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Testimonials — Client Feedback",
   description:
-    "Verified client feedback for WealthWorks will be featured here. Learn about our history since 1997 and how to share your experience.",
+    "Verified client feedback for Wealthworks will be featured here. Learn about our history since 1997 and how to share your experience.",
   alternates: { canonical: "/testimonials" },
 };
 
@@ -34,7 +34,7 @@ export default function TestimonialsPage() {
         crumb="Testimonials"
         eyebrow="Client Stories"
         title={<>Real people. <span className="text-gold-gradient">Real results.</span></>}
-        description="We believe feedback should be genuine. This page will feature verified stories from the business owners and merchants WealthWorks works with."
+        description="We believe feedback should be genuine. This page will feature verified stories from the business owners and merchants Wealthworks works with."
         image="/images/photos/meeting.jpg"
         imageAlt="Business professionals working together around a table"
       >
@@ -61,8 +61,8 @@ export default function TestimonialsPage() {
             </ul>
           ) : (
             <Reveal className="mt-14">
-              <div className="relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-line bg-gradient-to-br from-white via-soft to-[#fdf6e2] p-8 text-center sm:p-14">
-                <div aria-hidden className="absolute -right-20 -top-20 size-64 rounded-full bg-gold-light/40 blur-[80px]" />
+              <div className="relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-line bg-gradient-to-br from-white via-soft to-soft p-8 text-center sm:p-14">
+                <div aria-hidden className="absolute -right-20 -top-20 size-64 rounded-full bg-emerald/15 blur-[80px]" />
                 <div aria-hidden className="absolute -bottom-24 -left-16 size-64 rounded-full bg-fresh/20 blur-[80px]" />
                 <span className="relative mx-auto grid size-20 place-items-center rounded-3xl bg-gradient-to-br from-forest to-fresh text-gold-light shadow-xl">
                   <MessageSquareQuote className="size-10" aria-hidden />
@@ -70,13 +70,13 @@ export default function TestimonialsPage() {
                 <h3 className="relative mt-8 text-2xl font-extrabold sm:text-3xl">Verified client feedback is coming soon</h3>
                 <p className="relative mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted">
                   We only publish testimonials from real clients, with their permission. As stories are verified, they
-                  will be featured here. Have you worked with WealthWorks? We would love to hear from you.
+                  will be featured here. Have you worked with Wealthworks? We would love to hear from you.
                 </p>
                 <div className="relative mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                   <Link href="/contact?interest=General%20Inquiry" className="btn-primary">
                     Share Your Feedback <ArrowRight className="size-4" aria-hidden />
                   </Link>
-                  <a href={`mailto:${site.contact.email}?subject=WealthWorks%20Feedback`} className="btn-outline">
+                  <a href={`mailto:${site.contact.email}?subject=Wealthworks%20Feedback`} className="btn-outline">
                     Email Your Story
                   </a>
                 </div>
@@ -87,7 +87,7 @@ export default function TestimonialsPage() {
           {/* Quote-style values preview */}
           <div className="mt-16 grid gap-6 md:grid-cols-3">
             {[
-              { q: "Bringing future technologies to the world.", by: "The WealthWorks statement" },
+              { q: "Bringing future technologies to the world.", by: "The Wealthworks statement" },
               { q: "Accept crypto. Get paid in USD.", by: "Miracle Pay merchant promise" },
               { q: "Real people, real support.", by: "Our service commitment" },
             ].map((item, i) => (

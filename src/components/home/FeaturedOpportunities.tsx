@@ -10,8 +10,8 @@ export function FeaturedOpportunities() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Featured Opportunities"
-          title={<span id="opps-title">Opportunities we <span className="text-gold-gradient">introduce</span></span>}
-          description="WealthWorks connects its network with independent third-party companies and programs. Each card below links directly to the provider."
+          title={<span id="opps-title">Opportunities we <span className="text-green-gradient">introduce</span></span>}
+          description="Wealthworks connects its network with independent third-party companies and programs. Each card below links directly to the provider."
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {opportunities.map((o, i) => (

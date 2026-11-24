@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <Link href="/" aria-label="WealthWorks home" className={`inline-flex shrink-0 ${className}`}>
+    <Link href="/" aria-label="Wealthworks home" className={`inline-flex shrink-0 ${className}`}>
       <Image
         src="/images/logo/wealthworks-logo.png"
-        alt="WealthWorks — Since 1997"
+        alt="Wealthworks — Since 1997"
         width={216}
         height={59}
         priority

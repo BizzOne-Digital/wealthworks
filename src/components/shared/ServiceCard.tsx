@@ -18,10 +18,10 @@ const accents = {
     text: "text-emerald",
   },
   gold: {
-    bg: "from-[#fdf6e2] via-white to-white",
-    glow: "bg-gold/25",
-    chip: "bg-gradient-to-br from-gold-deep to-gold-light",
-    text: "text-gold-deep",
+    bg: "from-soft via-white to-white",
+    glow: "bg-emerald/15",
+    chip: "bg-gradient-to-br from-forest to-emerald",
+    text: "text-forest",
   },
 };
 

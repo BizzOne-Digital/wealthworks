@@ -33,8 +33,8 @@ export function ExternalCta({
 export function ReferralDisclosure({ className = "", light = false }: { className?: string; light?: boolean }) {
   return (
     <p className={cn("text-xs leading-relaxed", light ? "text-white/60" : "text-muted", className)}>
-      Disclosure: Some links on this page are WealthWorks referral or partner links to independent third-party
-      companies. WealthWorks may be credited for sign-ups made through them.
+      Disclosure: Some links on this page are Wealthworks referral or partner links to independent third-party
+      companies. Wealthworks may be credited for sign-ups made through them.
     </p>
   );
 }

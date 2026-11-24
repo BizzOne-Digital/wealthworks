@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
  */
 export function VideoPlayer({ video, className }: { video: VideoItem; className?: string }) {
   return (
-    <div className={cn("overflow-hidden rounded-[1.75rem] bg-[#0a1a14] shadow-[0_40px_80px_-40px_rgba(15,42,32,0.6)]", className)}>
+    <div className={cn("overflow-hidden rounded-[1.75rem] bg-[#03301a] shadow-[0_40px_80px_-40px_rgba(6,75,36,0.6)]", className)}>
       <video
         controls
         playsInline

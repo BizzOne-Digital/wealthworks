@@ -31,7 +31,7 @@ import { referralLinks, site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Services — Miracle Pay, AI Products & Opportunities",
   description:
-    "Explore Miracle Pay merchant solutions (accept crypto, get paid in USD), wearable AI technology, AI software, Bellator Life and the BG Lifestyle Luxury Travel Club through WealthWorks.",
+    "Explore Miracle Pay merchant solutions (accept crypto, get paid in USD), wearable AI technology, AI software, Bellator Life and the BG Lifestyle Luxury Travel Club through Wealthworks.",
   alternates: { canonical: "/services" },
 };
 
@@ -49,7 +49,7 @@ export default function ServicesPage() {
         crumb="Services"
         eyebrow="Services & Opportunities"
         title={<>Solutions for the <span className="text-gold-gradient">next era</span> of business</>}
-        description="Payment technology, AI products and selected opportunities — introduced by WealthWorks and explained clearly, so you can choose what fits your business."
+        description="Payment technology, AI products and selected opportunities — introduced by Wealthworks and explained clearly, so you can choose what fits your business."
         image="/images/photos/dashboard.jpg"
         imageAlt="Business analytics dashboard on a laptop screen"
       >
@@ -91,7 +91,7 @@ export default function ServicesPage() {
             <p className="mt-3 font-display text-2xl font-bold text-ink">Accept crypto. Get paid in USD.</p>
             <p className="mt-5 text-lg leading-relaxed text-muted">
               Miracle Pay gives customers a modern way to pay while keeping dollars at the center of your business.
-              WealthWorks introduces merchants to Miracle Pay, and Barry Phoenix — a MiraclePay Merchant Consultant —
+              Wealthworks introduces merchants to Miracle Pay, and Barry Phoenix — a MiraclePay Merchant Consultant —
               helps you get started.
             </p>
             <ul className="mt-7 grid gap-3 sm:grid-cols-3">
@@ -111,7 +111,7 @@ export default function ServicesPage() {
               </ExternalCta>
               <Link href="/contact?interest=Miracle%20Pay" className="btn-outline">Ask Barry a Question</Link>
             </div>
-            <p className="mt-4 text-xs text-muted">Miracle Pay is an independent company. This is a WealthWorks referral link.</p>
+            <p className="mt-4 text-xs text-muted">Miracle Pay is an independent company. This is a Wealthworks referral link.</p>
           </Reveal>
 
           <Reveal delay={0.12} className="relative">
@@ -170,7 +170,7 @@ export default function ServicesPage() {
               Wearable <span className="text-green-gradient">AI Technology</span>
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              Wearable devices are becoming smarter every year. WealthWorks introduces next-generation wearables such
+              Wearable devices are becoming smarter every year. Wealthworks introduces next-generation wearables such
               as the Metaterra AI One, featured by Bellator, designed for a more connected, more informed everyday life.
             </p>
             <ul className="mt-7 space-y-3">
@@ -189,12 +189,12 @@ export default function ServicesPage() {
       <section id="ai-software" className="section bg-soft">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
           <Reveal>
-            <p className="eyebrow text-gold-deep">03 · Software</p>
+            <p className="eyebrow">03 · Software</p>
             <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">
-              AI Software <span className="text-gold-gradient">Solutions</span>
+              AI Software <span className="text-green-gradient">Solutions</span>
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              Artificial intelligence is changing how businesses work. WealthWorks introduces emerging AI software and
+              Artificial intelligence is changing how businesses work. Wealthworks introduces emerging AI software and
               helps business owners understand where it can add value.
             </p>
             <div className="mt-7 grid gap-4 sm:grid-cols-2">
@@ -233,7 +233,7 @@ export default function ServicesPage() {
               Bellator <span className="text-gold-gradient">Life</span>
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-              Bellator Life is an independent membership opportunity that WealthWorks shares with entrepreneurs and
+              Bellator Life is an independent membership opportunity that Wealthworks shares with entrepreneurs and
               business builders. Bellator promotes member debit cards and the Metaterra AI One platform. Full program
               details, pricing and terms are provided directly by Bellator Life when you sign up.
             </p>
@@ -254,9 +254,9 @@ export default function ServicesPage() {
       <section className="section">
         <div className="container-x">
           <Reveal>
-            <article id="bg-lifestyle" className="relative flex min-h-[30rem] scroll-mt-40 flex-col overflow-hidden rounded-3xl text-white shadow-[0_40px_80px_-40px_rgba(15,42,32,0.6)]">
+            <article id="bg-lifestyle" className="relative flex min-h-[30rem] scroll-mt-40 flex-col overflow-hidden rounded-3xl text-white shadow-[0_40px_80px_-40px_rgba(6,75,36,0.6)]">
               <Image src="/images/photos/travel.jpg" alt="Tropical beach at sunset" fill sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />
-              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14] via-[#0a1a14]/60 to-transparent lg:bg-gradient-to-r lg:from-[#0a1a14] lg:via-[#0a1a14]/70" />
+              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03301a] via-[#03301a]/60 to-transparent lg:bg-gradient-to-r lg:from-[#03301a] lg:via-[#03301a]/70" />
               <div className="relative mt-auto flex max-w-xl flex-col p-8 pt-48 sm:p-12 lg:my-auto lg:pt-12">
                 <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-forest">
                   <Plane className="size-6" aria-hidden />
@@ -279,9 +279,9 @@ export default function ServicesPage() {
       {/* Overview / comparison */}
       <section id="overview" className="section scroll-mt-40 bg-soft">
         <div className="container-x">
-          <SectionHeading eyebrow="At a Glance" title="Compare the opportunities" description="A simple overview of the external programs WealthWorks introduces." />
+          <SectionHeading eyebrow="At a Glance" title="Compare the opportunities" description="A simple overview of the external programs Wealthworks introduces." />
           <Reveal className="mt-12">
-            <div className="card overflow-x-auto">
+            <div className="card relative overflow-x-auto">
               <table className="w-full min-w-[640px] text-left text-sm">
                 <caption className="sr-only">Overview of third-party opportunities</caption>
                 <thead>

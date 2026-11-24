@@ -1,6 +1,6 @@
 export const site = {
-  name: "WealthWorks, LLC",
-  shortName: "WealthWorks",
+  name: "Wealthworks, LLC",
+  shortName: "Wealthworks",
   tagline: "The Future in Technology",
   statement: "Bringing future technologies to the world.",
   established: 1997,
@@ -29,10 +29,10 @@ export const site = {
    * Icons render in the footer only for entries with a URL.
    */
   social: {
-    instagram: "",
-    facebook: "",
-    x: "",
-    linkedin: "",
+    instagram: "https://www.instagram.com/born7divine7/",
+    facebook: "https://www.facebook.com/share/1CWBC7ucYR/?mibextid=wwXIfr",
+    x: "https://x.com/bwise718",
+    linkedin: "https://www.linkedin.com/in/wealthworksinc",
   },
 } as const;
 

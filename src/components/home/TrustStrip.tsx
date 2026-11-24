@@ -10,7 +10,7 @@ const items = [
 
 export function TrustStrip() {
   return (
-    <section aria-label="Why WealthWorks" className="relative z-10 -mt-8 pb-4 sm:-mt-10">
+    <section aria-label="Why Wealthworks" className="relative z-10 -mt-8 pb-4 sm:-mt-10">
       <div className="container-x">
         <Reveal>
           <ul className="card grid grid-cols-1 divide-y divide-line px-2 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x">

@@ -12,7 +12,7 @@ import { externalLinkProps } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Contact — Let's Connect",
-  description: `Contact WealthWorks and Barry Phoenix. Call ${site.contact.phone}, email ${site.contact.email}, or send an inquiry about Miracle Pay, AI products and more.`,
+  description: `Contact Wealthworks and Barry Phoenix. Call ${site.contact.phone}, email ${site.contact.email}, or send an inquiry about Miracle Pay, AI products and more.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -28,11 +28,11 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-soft to-white">
         <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 size-[560px] rounded-full bg-fresh/15 blur-[110px]" />
-        <div aria-hidden className="pointer-events-none absolute -left-32 top-20 size-[380px] rounded-full bg-gold-light/30 blur-[110px]" />
+        <div aria-hidden className="pointer-events-none absolute -left-32 top-20 size-[380px] rounded-full bg-emerald/10 blur-[110px]" />
         <SwooshBg />
         <div className="container-x relative py-16 text-center sm:py-24">
           <Reveal>
-            <p className="eyebrow justify-center">Contact WealthWorks</p>
+            <p className="eyebrow justify-center">Contact Wealthworks</p>
             <h1 className="mt-4 text-5xl font-extrabold sm:text-6xl lg:text-7xl">
               Let&apos;s <span className="text-gold-gradient">Connect</span>
             </h1>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                     {...(external ? externalLinkProps : {})}
                     className="card card-hover group flex h-full items-start gap-4 p-6"
                   >
-                    <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-forest to-fresh text-white transition group-hover:from-gold-deep group-hover:to-gold-light">
+                    <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-forest to-fresh text-white transition group-hover:from-emerald group-hover:to-fresh">
                       <Icon className="size-5" aria-hidden />
                     </span>
                     <span className="min-w-0">
@@ -85,7 +85,7 @@ export default function ContactPage() {
               <div className="overflow-hidden rounded-3xl border border-line bg-white">
                 <div className="relative aspect-[16/10]">
                   <Image src="/images/photos/city.jpg" alt="Modern office with city views" fill sizes="(min-width: 1024px) 30vw, 100vw" className="object-cover" />
-                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14]/85 to-transparent" />
+                  <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03301a]/85 to-transparent" />
                   <p className="absolute bottom-4 left-5 flex items-center gap-2 font-display font-bold text-white">
                     <MapPin className="size-4 text-gold-light" aria-hidden /> Atlanta, Georgia
                   </p>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     <Phone className="size-4" aria-hidden /> Book a Call
                   </a>
                 </div>
-                <p className="mt-4 text-xs text-white/50">Miracle Pay is an independent company. This is a WealthWorks referral link.</p>
+                <p className="mt-4 text-xs text-white/50">Miracle Pay is an independent company. This is a Wealthworks referral link.</p>
               </div>
               <div className="mx-auto w-full max-w-[240px] rounded-3xl bg-white p-4 text-center text-ink">
                 <p className="text-xs font-bold uppercase tracking-widest">Scan to get started</p>

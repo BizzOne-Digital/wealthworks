@@ -14,11 +14,11 @@ export function OpportunityCard({ item }: { item: Opportunity }) {
           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           className="object-cover transition-transform duration-[1.1s] group-hover:scale-110"
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#0a1a14]/80 via-[#0a1a14]/10 to-transparent" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#03301a]/80 via-[#03301a]/10 to-transparent" />
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-forest backdrop-blur">
           {item.category}
         </span>
-        <span className="absolute bottom-4 left-4 text-xs font-medium uppercase tracking-[0.2em] text-gold-light">
+        <span className="absolute bottom-4 left-4 text-xs font-medium uppercase tracking-[0.2em] text-white/85">
           Third-party program
         </span>
       </div>

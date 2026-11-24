@@ -32,14 +32,14 @@ export function WatchOverviewButton({ light = false }: { light?: boolean }) {
         onClick={(e) => {
           if (e.target === e.currentTarget) close();
         }}
-        className="m-auto w-[min(92vw,1100px)] max-w-none bg-transparent p-0 backdrop:bg-[#0a1a14]/85 backdrop:backdrop-blur-sm"
+        className="m-auto w-[min(92vw,1100px)] max-w-none bg-transparent p-0 backdrop:bg-[#03301a]/85 backdrop:backdrop-blur-sm"
       >
         <div className="relative">
           <button
             type="button"
             onClick={close}
             aria-label="Close video"
-            className="absolute -top-14 right-0 grid size-11 place-items-center rounded-full bg-white text-forest shadow-lg transition hover:bg-gold-light"
+            className="absolute right-3 top-3 z-10 grid size-11 place-items-center rounded-full bg-white text-forest shadow-lg transition hover:bg-gold-light"
           >
             <X className="size-5" aria-hidden />
           </button>

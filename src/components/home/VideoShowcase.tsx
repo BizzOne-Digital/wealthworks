@@ -22,7 +22,7 @@ export function VideoShowcase() {
       <div className="container-x">
         <SectionHeading
           eyebrow="See It in Action"
-          title={<span id="video-title">The future of technology, <span className="text-gold-gradient">in motion</span></span>}
+          title={<span id="video-title">The future of technology, <span className="text-green-gradient">in motion</span></span>}
           description="Watch how next-generation AI devices are becoming part of everyday life."
         />
         <div className="mt-14 grid gap-8 lg:grid-cols-2">

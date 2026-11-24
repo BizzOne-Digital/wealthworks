@@ -66,7 +66,7 @@ export type Opportunity = {
   cta: string;
 };
 
-/** Third-party programs WealthWorks refers visitors to (client referral links). */
+/** Third-party programs Wealthworks refers visitors to (client referral links). */
 export const opportunities: Opportunity[] = [
   {
     id: "miracle-pay",
@@ -87,7 +87,7 @@ export const opportunities: Opportunity[] = [
     provider: "Bellator Life",
     category: "Membership opportunity",
     description:
-      "A membership opportunity WealthWorks shares with its network. Program details, pricing and terms are provided directly by Bellator Life.",
+      "A membership opportunity Wealthworks shares with its network. Program details, pricing and terms are provided directly by Bellator Life.",
     bestFor: "Entrepreneurs and business builders",
     image: "/images/photos/city.jpg",
     imageAlt: "Bright modern office overlooking a city skyline",
@@ -111,8 +111,8 @@ export const opportunities: Opportunity[] = [
 
 export const faqs = [
   {
-    q: "Is WealthWorks the owner of Miracle Pay, Bellator Life or BG Lifestyle?",
-    a: "No. These are independent third-party companies and programs. WealthWorks introduces them to its network, and the links on this website are WealthWorks referral links.",
+    q: "Is Wealthworks the owner of Miracle Pay, Bellator Life or BG Lifestyle?",
+    a: "No. These are independent third-party companies and programs. Wealthworks introduces them to its network, and the links on this website are Wealthworks referral links.",
   },
   {
     q: "What does Miracle Pay offer merchants?",
@@ -124,10 +124,10 @@ export const faqs = [
   },
   {
     q: "Do the referral links cost me anything extra?",
-    a: "Referral links track that you were introduced by WealthWorks. Pricing and terms are set by each provider, so review their details before signing up.",
+    a: "Referral links track that you were introduced by Wealthworks. Pricing and terms are set by each provider, so review their details before signing up.",
   },
   {
-    q: "Can WealthWorks help me choose the right option?",
+    q: "Can Wealthworks help me choose the right option?",
     a: "Yes. Contact Barry Phoenix by phone or email to talk through your business goals and which opportunity may fit.",
   },
 ];

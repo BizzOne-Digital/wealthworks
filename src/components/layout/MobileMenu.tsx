@@ -79,7 +79,7 @@ export function MobileMenu({ pathname }: { pathname: string }) {
                       className="flex items-center justify-between py-4 font-display text-xl font-semibold text-ink aria-[current=page]:text-emerald"
                     >
                       {item.label}
-                      <ArrowRight className="size-5 text-gold" aria-hidden />
+                      <ArrowRight className="size-5 text-emerald" aria-hidden />
                     </Link>
                   </motion.li>
                 ))}

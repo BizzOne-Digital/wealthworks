@@ -9,8 +9,8 @@ export function Solutions() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Our Solutions"
-          title={<span id="solutions-title">Technology built for <span className="text-gold-gradient">what&apos;s next</span></span>}
-          description="From modern merchant payments to intelligent devices and AI software, WealthWorks introduces practical technology that helps businesses grow."
+          title={<span id="solutions-title">Technology built for <span className="text-green-gradient">what&apos;s next</span></span>}
+          description="From modern merchant payments to intelligent devices and AI software, Wealthworks introduces practical technology that helps businesses grow."
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {solutions.map((s, i) => (

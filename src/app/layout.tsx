@@ -16,26 +16,26 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "WealthWorks | The Future in Technology — Since 1997",
-    template: "%s | WealthWorks",
+    default: "Wealthworks | The Future in Technology — Since 1997",
+    template: "%s | Wealthworks",
   },
   description:
-    "WealthWorks, LLC brings future technologies to the world: Miracle Pay merchant payment solutions, wearable AI products and AI software for business growth. Since 1997.",
+    "Wealthworks, LLC brings future technologies to the world: Miracle Pay merchant payment solutions, wearable AI products and AI software for business growth. Since 1997.",
   applicationName: site.shortName,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: site.name,
     url: site.url,
-    title: "WealthWorks | The Future in Technology",
+    title: "Wealthworks | The Future in Technology",
     description: site.statement,
-    images: [{ url: "/images/hero/hero-devices.webp", width: 846, height: 490, alt: "WealthWorks technology" }],
+    images: [{ url: "/images/hero/hero-devices.webp", width: 846, height: 490, alt: "Wealthworks technology" }],
   },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/images/logo/wealthworks-mark.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#0f2a20" };
+export const viewport: Viewport = { themeColor: "#064b24" };
 
 const jsonLd = {
   "@context": "https://schema.org",
