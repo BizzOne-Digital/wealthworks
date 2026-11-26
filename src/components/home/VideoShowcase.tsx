@@ -18,7 +18,7 @@ const items = [
 
 export function VideoShowcase() {
   return (
-    <section className="section bg-soft" aria-labelledby="video-title">
+    <section className="section" aria-labelledby="video-title">
       <div className="container-x">
         <SectionHeading
           eyebrow="See It in Action"

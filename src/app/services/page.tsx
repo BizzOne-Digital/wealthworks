@@ -249,6 +249,35 @@ export default function ServicesPage() {
           </Reveal>
         </div>
 
+        {/* Metaterra AI fintech ecosystem (client-provided Metaterra graphic) */}
+        <div className="container-x relative mt-20">
+          <Reveal>
+            <div className="mx-auto max-w-5xl text-center">
+              <h3 className="text-2xl font-extrabold sm:text-4xl">The MetaTerra AI Fintech Ecosystem</h3>
+              <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-white/75">
+                AI, payments, Web3 and real-world value in one ecosystem, built around the MetaTerra AI One wearable.
+              </p>
+              <a
+                href="/images/metaterra/metaterra-ai-fintech-ecosystem.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 block overflow-hidden rounded-[1.5rem] border border-white/10 shadow-2xl transition hover:border-white/30"
+              >
+                <Image
+                  src="/images/metaterra/metaterra-ai-fintech-ecosystem.jpg"
+                  alt="MetaTerra AI fintech ecosystem infographic: AI wearable, AI agents, payments, banking, Web3 and real-world assets"
+                  width={1320}
+                  height={744}
+                  sizes="(min-width: 1024px) 1024px, 100vw"
+                  className="h-auto w-full"
+                />
+                <span className="sr-only">Open full-size image in a new tab</span>
+              </a>
+              <p className="mt-3 text-xs text-white/55">Image: MetaTerra AI promotional material. Tap to view full size.</p>
+            </div>
+          </Reveal>
+        </div>
+
         {/* Latest Metaterra AI presentation (client-provided) */}
         <div className="container-x relative mt-20">
           <Reveal>

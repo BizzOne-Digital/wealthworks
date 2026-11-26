@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { mainNav } from "@/data/navigation";
 import { Logo } from "./Logo";
 import { MobileMenu } from "./MobileMenu";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -44,7 +45,8 @@ export function Navbar() {
             ))}
           </ul>
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <LanguageSwitcher />
           <Link href="/contact" className="btn-primary hidden min-h-11 px-5 text-sm sm:inline-flex">
             Get Started <ArrowRight className="size-4" aria-hidden />
           </Link>

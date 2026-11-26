@@ -22,7 +22,7 @@ export function WatchOverviewButton({ light = false }: { light?: boolean }) {
         <span className={`grid size-12 place-items-center rounded-full border-2 transition ${light ? "border-gold-light/80 text-gold-light group-hover:bg-gold-light group-hover:text-forest" : "border-forest/80 bg-white group-hover:bg-forest group-hover:text-white"}`}>
           <Play className="ml-0.5 size-4 fill-current" aria-hidden />
         </span>
-        Watch Overview
+        Play Video Overview
       </button>
 
       <dialog

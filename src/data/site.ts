@@ -11,7 +11,7 @@ export const site = {
     miraclePayTitle: "MiraclePay Merchant Consultant",
   },
   contact: {
-    email: "wealthworks718@gmail.com",
+    email: "info@wealthworks.com",
     phone: "(404) 319-0361",
     phoneHref: "tel:+14043190361",
     address: {
